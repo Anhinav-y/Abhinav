@@ -244,81 +244,61 @@ body {
   margin-bottom: 20px;
 }
 
-.product-image {
-  max-width: 250px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 12px;
-}
+/* Make footer fill the screen */
 .site-footer {
+  width: 100vw;
   background-color: #1e1e1e;
-  color: #fff;
-  padding: 40px 20px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
 }
 
-.footer-container {
+/* Grid layout for footer */
+.footer-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: space-around;
+  padding: 0 20px;
 }
 
-.footer-section {
+.footer-grid > div {
   flex: 1 1 200px;
-  min-width: 200px;
+  margin-bottom: 20px;
 }
 
-.footer-section h2, .footer-section h3 {
+.footer-grid h3 {
   color: #00bcd4;
-  margin-bottom: 10px;
 }
 
-.footer-section ul {
+.footer-grid ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-section ul li {
-  margin: 6px 0;
-}
-
-.footer-section ul li a {
-  color: #fff;
+.footer-grid ul li a {
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-  color: #00bcd4;
-}
-
-.footer-section p {
-  margin: 6px 0;
-}
-
-.footer-section.social a {
-  display: inline-block;
+.social-icons img {
+  width: 24px;
   margin-right: 10px;
 }
 
-.footer-section.social img {
-  width: 24px;
-  height: 24px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s;
-}
-
-.footer-section.social img:hover {
-  transform: scale(1.2);
-}
-
+/* Footer bottom bar */
 .footer-bottom {
   text-align: center;
+  padding: 10px 20px;
   border-top: 1px solid #444;
-  padding-top: 15px;
-  margin-top: 30px;
-  font-size: 0.9rem;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Reset body margin */
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
 
