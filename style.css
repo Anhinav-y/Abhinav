@@ -302,6 +302,78 @@ margin-left: 40px;
   background-color: #002855;
 }
 
+.hero {
+  background: #002e6e;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.fields-section {
+  padding: 50px 20px;
+}
+
+.fields-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.field-card {
+  flex: 1 1 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.field-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.field-icon {
+  font-size: 30px;
+  color: #002e6e;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.field-card h3 {
+  color: #002e6e;
+  margin-bottom: 10px;
+}
+
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta a {
+  background: #002e6e;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
 
 
 
