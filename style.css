@@ -266,7 +266,7 @@ margin-left: 40px;
   color: #555;
   margin-bottom: 15px;
 }
-
+/*
 .btn {
   display: inline-block;
   padding: 8px 16px;
@@ -283,10 +283,10 @@ margin-left: 40px;
   background: #333;
   color: #fff;
 }
+*/
 
 
-
-.whatsapp-link {
+.btn {
   display: inline-block;
   background-color:  #003b80;
   color: white;
@@ -297,7 +297,7 @@ margin-left: 40px;
   transition: background-color 0.3s ease;
 }
 
-.whatsapp-link:hover {
+.btn:hover {
   background-color: #002855;
 }
 
