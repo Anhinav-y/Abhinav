@@ -99,6 +99,49 @@
 
                                                                            <!-- top section -->
 
+  <!-- 🔹 Slideshow Section with Text Overlay -->
+<section id="slideshow-section" style="padding: 40px 20px; background: #e8f0fe;">
+  <div style="max-width: 1000px; margin: auto; text-align: center; position: relative;">
+    <h2 style="color: #003366; margin-bottom: 20px;">Welcome to Nirmal Legal Associates</h2>
+
+    <div style="position: relative; width: 80%; max-width: 500px; margin: auto;">
+      <img id="slideshow" src="images/photo1.jpg" alt="Slideshow" 
+           style="width: 100%; border-radius: 10px; opacity: 1; transition: opacity 1s ease-in-out;">
+      <div id="slide-text" 
+           style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); 
+                  color: white; background: rgba(0,0,0,0.5); padding: 10px 20px; 
+                  border-radius: 10px; font-size: 18px;">
+        Trusted Legal Guidance Since 2005
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 Slideshow Script -->
+<script>
+  const images = [
+    { src: "images/photo1.jpg", text: "Trusted Legal Guidance Since 2005" },
+    { src: "images/photo2.jpg", text: "Experienced Civil & Criminal Lawyers" },
+    { src: "images/photo3.jpg", text: "Your Rights, Our Responsibility" }
+  ];
+
+  let index = 0;
+  const imgElement = document.getElementById("slideshow");
+  const textElement = document.getElementById("slide-text");
+
+  setInterval(() => {
+    imgElement.style.opacity = 0;
+
+    setTimeout(() => {
+      index = (index + 1) % images.length;
+      imgElement.src = images[index].src;
+      textElement.textContent = images[index].text;
+      imgElement.style.opacity = 1;
+    }, 1000); // fade out duration
+  }, 3000); // change every 3 seconds
+</script>
+
+
 
 <section style="background-color: #ffffff; padding: 50px 20px; max-width: 1000px; margin: 50px auto; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
 
