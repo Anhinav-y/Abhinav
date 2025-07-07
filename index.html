@@ -507,6 +507,22 @@ Please click that the flooting 📞 icon to call us
   setInterval(updateBanner, 3000); // Change every 3 seconds
 </script>
 
+<!--new code-->
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+
+  // Optional: Close when link clicked
+  document.querySelectorAll('.menu li a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('open');
+    });
+  });
+</script>
 
 
 
