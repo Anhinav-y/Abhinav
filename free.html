@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free legal consultation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+<meta name="description" content="The best expert and experienced free legal advice from a well-qualified and experienced lawyer is just a click away">
+<meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nirmallegal.com/" />
+
+</head>
+<body>
+
+                                                                           <!-- top section -->
+
+                                                                           <!--Header -->
+
+  <div class="subheader">
+    <div>Timing 24*7 hours</div>
+    <div>📞 +91 8840575540 | Call Us For Free Consultation</div>
+  </div>
+  <header class="main-header">
+    <div class="logo">Nirmal Legal Associates</div>
+</header>
+ 
+<h1>Legal advice online! With Experienced Lawers </h1>
+<p> Get profestional legal advice from lawyer of specified field  matched to your specific needs. Fill out the form below to connect with an expert lawyer.
+</p>
+
+<!-- talk section -->
+
+
+<h2> Talk to our Expert lawyer With your Preferend method  </h2>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f8f8;
+      padding: 50px;
+    }
+    .timer-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .message {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #d9534f;
+    }
+    .countdown {
+      font-size: 36px;
+      font-weight: bold;
+      color: #0275d8;
+    }
+    .expired {
+      color: #ff0000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="timer-box">
+    <div class="message">
+      ⏳ Hurry up! Only <span class="countdown" id="timer">15:00</span> minutes left to claim your
+      <strong>Free Consultation</strong>!
+    </div>
+    <div id="expiredMsg" class="expired" style="display: none;">
+      ❌ Time is up! You missed the free consultation.
+    </div>
+  </div>
+
+  <script>
+    const timerDisplay = document.getElementById("timer");
+    const expiredMsg = document.getElementById("expiredMsg");
+
+    const totalSeconds = 15 * 60; // 15 minutes
+    const STORAGE_KEY = "consultationStartTime";
+
+    // Use sessionStorage so every new visitor (or incognito user) gets a fresh 15 mins
+    let startTime = sessionStorage.getItem(STORAGE_KEY);
+    
+    if (!startTime) {
+      startTime = new Date().getTime();
+      sessionStorage.setItem(STORAGE_KEY, startTime);
+    } else {
+      startTime = parseInt(startTime);
+    }
+
+    function startCountdown(start) {
+      const interval = setInterval(() => {
+        const now = new Date().getTime();
+        const elapsed = Math.floor((now - start) / 1000);
+        const remaining = totalSeconds - elapsed;
+
+        if (remaining <= 0) {
+          clearInterval(interval);
+          timerDisplay.style.display = "none";
+          expiredMsg.style.display = "block";
+        } else {
+          const mins = Math.floor(remaining / 60).toString().padStart(2, '0');
+          const secs = (remaining % 60).toString().padStart(2, '0');
+          timerDisplay.textContent = `${mins}:${secs}`;
+        }
+      }, 1000);
+    }
+
+    startCountdown(startTime);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+     <!-- footer -->
+     <!-- footer -->
+     <!-- footer -->
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Brand Info -->
+    <div class="footer-section brand">
+      <h2>Nirmal Legal Associates</h2>
+      <p>Your trusted Legal guide.</p>
+    </div>
+
+    <!-- Category Links -->
+    <div class="footer-section categories">
+      <h3>common Fields</h3>
+      <ul>
+        <li><a href="field.html">Civil</a></li>
+       
+        <li><a href="field.html">Criminal</a></li>
+        <li><a href="field.html">Family</a></li> 
+        <li><a href="field.html">Insurence</a></li>
+        <li><a href="field.html">Labour</a></li>
+         <!-- Future categories -->
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="fields..html">Our Fields</a></li>
+          <li><a href="fields..html">We work in </a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: nimaljustice@gmail.com</p>
+      <p>Phone: +91-8840575540</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com/share/19nX7ZvbSr/"><img src="https://img.icons8.com/ios-filled/24/facebook--v1.png" alt="Facebook"></a>
+    <!--  <a href="#"><img src="https://img.icons8.com/ios-filled/24/instagram-new.png" alt="Instagram"></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/twitterx--v1.png" alt="Twitter"></a> -->
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+ <div align="center">
+    <h4>Disclaimer</h4>
+    <small>
+      This website is meant only for informational purposes. As per Bar Council of India rules, we do not solicit or advertise. Visitors are advised to seek professional legal advice before acting on any information provided herein.
+    </small>
+  </div>
+    <p>&copy; 2025 Nirmal legal Associates. All rights reserved.</p>
+  </div>
+</footer>
+
+
+                                                  
+
+
+<a href="tel:+918840575540" class="floating-call-button" title="Call Us Now">
+  📞
+</a>
+
+
+
+
+
+
+
+
+ 
+
+ 
+</body>
+</html>
+
+
